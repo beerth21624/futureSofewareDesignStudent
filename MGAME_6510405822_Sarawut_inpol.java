@@ -1,4 +1,12 @@
 //6510405822 Sarawut inpol
+
+public class Main {
+    public static void main(String[] args) {
+        MGame game = new MGame(7);
+        game.playGame();
+    }
+}
+
 class Die{
     private int faceValue = 1;
 
