@@ -1,2 +1,4 @@
 # futureSofewareDesignStudent
-for enroll sofeware design
+This repository was created for enrolling in the software design course.
+
+Wish me luck.
