@@ -1,4 +1,4 @@
-
+//6510405822 Sarawut inpol
 class Die{
     private int faceValue = 1;
 
