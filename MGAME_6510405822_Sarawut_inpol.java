@@ -117,7 +117,16 @@ class Player {
             fv += die.getFaceValue();
         }
         Square oldLoc = piece.getLocation();
-        Square newLoc = board.getSquare((oldLoc.getIndex() + fv) % 40);
+        int oldLocIndex = 0;
+        for (int i = 0; i < board.getSquares().length; i++){
+            if (board.getSquares()[i] == oldLoc){
+                oldLocIndex = i;
+                break;
+            }
+        }
+        int newLocIndex = (oldLocIndex + fv) % board.getSquares().length;
+        Square newLoc = board.getSquare(newLocIndex);
+
         piece.setLocation(newLoc);
     }
 
