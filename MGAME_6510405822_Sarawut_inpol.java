@@ -102,12 +102,14 @@ class Player {
     private String name;
     private Die[] dice;
     private Board board;
-    private Piece piece = new Piece(board.getSquare(0));
+    private Piece piece;
 
     public Player(String name, Die[] dice, Board board){
         this.name = name;
         this.dice = dice;
         this.board = board;
+        piece = new Piece(board.getSquare(0));
+
     }
 
     public void takeTurn(){
